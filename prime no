@@ -1,3 +1,18 @@
+ questions : Prime Number 41, can be written as the sum of six consecutive primes:
+41 = 2 + 3 + 5 + 7 + 11 + 13
+
+This is the longest sum of consecutive primes that adds to a prime below one-hundred.
+
+The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.
+
+Which prime, below 100,000, can be written as the sum of the most consecutive primes?
+
+Write a Python function which will take a number as an input parameter and print the largest prime number that is a sum of most consecutive primes.
+
+
+
+
+
 def primeno(x):
     import sympy
     sum=0
@@ -14,3 +29,4 @@ def primeno(x):
     return max(list2)
 x= int(input("enter a number:"))
 primeno(x)
+
