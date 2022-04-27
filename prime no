@@ -34,5 +34,5 @@ def sumprime(x):
 x=int(input('Enter a no:'))
 sumprime(x)
 
-
+Run this file on vs code 
 
