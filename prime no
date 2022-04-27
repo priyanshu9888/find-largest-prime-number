@@ -13,20 +13,26 @@ Write a Python function which will take a number as an input parameter and print
 
 
 
-def primeno(x):
+
+def sumprime(x): 
     import sympy
     sum=0
-    list1=[]
+    lst1=[]
+
     for num in range(1,x):
         if sympy.isprime(num) is True:
-            sum=num+num
-            list1.append(sum)
-    list2=[]
-    for sum in list1:
+            sum=sum+num
+            lst1.append(sum)
+
+    lst2=[]
+    for sum in lst1:
         if sum<x:
             if sympy.isprime(sum)==True:
-                list2.append(sum)
-    return max(list2)
-x= int(input("enter a number:"))
-primeno(x)
+                lst2.append(sum)
+    print( max(lst2))
+
+x=int(input('Enter a no:'))
+sumprime(x)
+
+
 
